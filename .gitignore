@@ -1,0 +1,32 @@
+# Laravel & PHP
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+.env.*.php
+.phpunit.result.cache
+
+# Laravel logs & cache
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Composer & NPM
+composer.lock
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# IDE / Editor
+/.idea
+/.vscode
+*.swp
+*.swo
+*.bak
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+

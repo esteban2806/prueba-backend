@@ -1,0 +1,272 @@
+{
+    "info": {
+        "name": "Prueba Backend API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Clientes",
+            "item": [
+                {
+                    "name": "Listar Clientes",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/clientes",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "clientes"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Crear Cliente",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nombre\": \"Juan Perez\", \"email\": \"juan@example.com\", \"telefono\": \"999999999\"}"
+                        },
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/clientes",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "clientes"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Ver Cliente",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/clientes/1",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "clientes",
+                                "1"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Actualizar Cliente",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nombre\": \"Juan Modificado\", \"email\": \"juan_mod@example.com\", \"telefono\": \"988888888\"}"
+                        },
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/clientes/1",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "clientes",
+                                "1"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Eliminar Cliente",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/clientes/1",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "clientes",
+                                "1"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Notas de un Cliente con Productos",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/clientes/1/notas",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "clientes",
+                                "1",
+                                "notas"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Productos",
+            "item": [
+                {
+                    "name": "Listar Productos",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/productos",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "productos"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Crear Producto",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nombre\": \"Laptop\",\"descripcion\": \"lenovo corei5  250gb ssd\", \"precio\": 2500, \"stock\": 10}"
+                        },
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/productos",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "productos"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Notas de Compra",
+            "item": [
+                {
+                    "name": "Listar Notas",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/notas",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "notas"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Crear Nota de Compra",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"cliente_id\": 1, \"fecha\": \"2025-09-24\", \"observaciones\": \"Primera compra\"}"
+                        },
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/notas",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "notas"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Calcular Total Nota",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/notas/1/total",
+                            "protocol": "http",
+                            "host": [
+                                "127.0.0.1"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "api",
+                                "notas",
+                                "1",
+                                "total"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
